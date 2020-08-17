@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 
-namespace Euler
+namespace Project_Euler
 {
-    class Euler_2
+    class Euler2
     {
         public static void Calculate()
         {
@@ -22,8 +21,8 @@ namespace Euler
                     evenNumbers.Add(fibonacciSequence[i]);
                 }
             }
-            int even_num_sum = evenNumbers.Sum();
-            Console.WriteLine(even_num_sum);
+            int evenNumSum = evenNumbers.Sum();
+            Console.WriteLine(evenNumSum);
 
             stopwatch.Stop();
             Console.WriteLine(stopwatch.Elapsed);

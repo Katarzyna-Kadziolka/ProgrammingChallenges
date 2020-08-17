@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 
-namespace Euler
+namespace Project_Euler
 {
-    class Euler_1
+    class Euler1
     {
         public static void Calculate()
         {
