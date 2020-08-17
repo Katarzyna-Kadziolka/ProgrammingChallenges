@@ -14,6 +14,6 @@ Programming challenges in C#
 
 ![00](ProgrammingChallenges/Docs/NameGenerator.png)
 
-* <a name="07">07</a> [Project Euler](ProgrammingChallenges/Project Euler)<br>
+* <a name="07">07</a> [Project Euler](ProgrammingChallenges/Project%20Euler)<br>
 
 ![07](ProgrammingChallenges/Docs/Euler.png)
