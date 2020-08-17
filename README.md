@@ -9,5 +9,6 @@ Programming challenges in C#
 * [00 Name generator](#00)
 
 ## Solutions
-* <a name="00">00</a> Name Generator <br>
+* <a name="00">00</a> [Name Generator](ProgrammingChallenges/NameGenerator)<br>
+
 ![00](ProgrammingChallenges/Docs/NameGenerator.png)
