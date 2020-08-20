@@ -14,6 +14,7 @@ namespace Project_Euler
                                      "2. Even Fibonacci numbers\n" +
                                      "3. Largest prime factor\n" +
                                      "4. Largest palindrome product\n" +
+                                     "5. Smallest multiple\n" +
                                      "9. Special Pythagorean triplet\n" +
                                      "10. Summation of primes");
 
@@ -37,6 +38,9 @@ namespace Project_Euler
             }
             else if (number == 4) {
                 Euler4.Calculate();
+            }
+            else if (number == 5) {
+                Euler5.Calculate();
             }
             else if (number == 9) {
                 Euler9.Calculate();
