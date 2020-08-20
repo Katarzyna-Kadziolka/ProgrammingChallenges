@@ -12,7 +12,8 @@ namespace Project_Euler
             Stopwatch stopwatch = Stopwatch.StartNew();
 
             List<int> factors = new List<int>();
-            for (int i = 2; i < 21; i++) {
+            int largestDivisibleNumber = 20;
+            for (int i = 2; i < largestDivisibleNumber + 1; i++) {
                 List<int> componentFactors = MathHelper.BreakDownIntoPrimeFactors(i);
                 factors = CheckListRepetitions(factors, componentFactors);
             }
