@@ -6,4 +6,10 @@
     <RootNamespace>Project_Euler</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="Euler11.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
