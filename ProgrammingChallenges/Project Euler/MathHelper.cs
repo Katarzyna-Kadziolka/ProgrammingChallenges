@@ -59,5 +59,11 @@ namespace Project_Euler {
             }
             return result;
         }
+
+        public static int CreateTriangularNumber(int numberToAdd, int oldTriangularNumber) {
+            int triangularNumber = oldTriangularNumber + numberToAdd;
+
+            return triangularNumber;
+        }
     }
 }
