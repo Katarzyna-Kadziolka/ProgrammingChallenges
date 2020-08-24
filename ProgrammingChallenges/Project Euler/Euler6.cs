@@ -31,11 +31,9 @@ namespace Project_Euler
 
         private static int GetSumOfSquers(int maxNumber) {
             int result = 0;
-            List<int> squers = new List<int>();
             for (int i = 1; i < maxNumber + 1; i++) {
-                squers.Add(i * i);
+                result = result + i * i;
             }
-            result = squers.Sum();
             return result;
         }
     }
