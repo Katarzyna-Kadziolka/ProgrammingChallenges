@@ -25,7 +25,7 @@ namespace Project_Euler
             int horizontalProduct = GetHorizontalProduct(array);
             int verticalProduct = GetVerticalProduct(array);
             int diagonallyRightProduct = GetDiagonallyRightProduct(array);
-            int diagonallyLeftProduct = GetDIagonallyLeftProduct(array);
+            int diagonallyLeftProduct = GetDiagonallyLeftProduct(array);
             List<int> productsList = new List<int>() {horizontalProduct, verticalProduct, diagonallyRightProduct, diagonallyLeftProduct};
 
             Console.WriteLine(productsList.Max());
@@ -34,7 +34,7 @@ namespace Project_Euler
             Console.WriteLine(stopwatch.Elapsed);
         }
 
-        public static int GetHorizontalProduct(int[,] array) {
+        private static int GetHorizontalProduct(int[,] array) {
             int maxProduct = 0;
             for (int i = 0; i < array.GetLength(0); i++) {
                 for (int j = 0; j < array.GetLength(1); j++) {
@@ -49,7 +49,7 @@ namespace Project_Euler
             return maxProduct;
         }
 
-        public static int GetVerticalProduct(int[,] array) {
+        private static int GetVerticalProduct(int[,] array) {
             int maxProduct = 0;
             for (int i = 0; i < array.GetLength(1); i++) {
                 for (int j = 0; j < array.GetLength(0); j++) {
@@ -64,7 +64,7 @@ namespace Project_Euler
             return maxProduct;
         }
 
-        public static int GetDiagonallyRightProduct(int[,] array) {
+        private static int GetDiagonallyRightProduct(int[,] array) {
             int maxProduct = 0;
             for (int i = 0; i < array.GetLength(0); i++) {
                 for (int j = 0; j < array.GetLength(1); j++) {
@@ -79,7 +79,7 @@ namespace Project_Euler
             return maxProduct;
         }
 
-        public static int GetDIagonallyLeftProduct(int[,] array) {
+        private static int GetDiagonallyLeftProduct(int[,] array) {
             int maxProduct = 0;
             for (int i = 0; i < array.GetLength(0); i++) {
                 for (int j = 0; j < array.GetLength(1); j++) {
