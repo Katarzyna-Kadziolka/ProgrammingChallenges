@@ -9,18 +9,17 @@ namespace Project_Euler
     {
         public static void Calculate() {
             Stopwatch stopwatch = Stopwatch.StartNew();
-
+            
             int minNumberOfFactors = 500;
-            List<int> factors = new List<int>();
-            int startNumber = 1;
-            int triangularNumber = 0;
+            int startNumber = 2;
+            int triangularNumber = 1;
+            int numberOfFactors;
             do {
-                factors.Clear();
                 triangularNumber = MathHelper.CreateTriangularNumber(startNumber, triangularNumber);
-                factors = MathHelper.BreakDownIntoPrimeFactors(triangularNumber);
+                numberOfFactors = MathHelper.GetNumberOfFactors(triangularNumber);
                 startNumber++;
 
-            } while (factors.Count <minNumberOfFactors -2);
+            } while (numberOfFactors < minNumberOfFactors);
 
             Console.WriteLine(triangularNumber);
             stopwatch.Stop();

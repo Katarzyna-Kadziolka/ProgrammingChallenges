@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace Project_Euler {
     class MathHelper {
@@ -64,6 +66,27 @@ namespace Project_Euler {
             int triangularNumber = oldTriangularNumber + numberToAdd;
 
             return triangularNumber;
+        }
+
+        public static List<int> GetFactors(int number) {
+            List<int> factors = new List<int>();
+            for (int i = 1; i < number + 1; i++) {
+                if (number % i == 0) {
+                    factors.Add(i);
+                }
+            }
+
+            return factors;
+        }
+
+        public static int GetNumberOfFactors(int number) {
+            List<int> primeFactors = BreakDownIntoPrimeFactors(number);
+
+            int numberOfFactors = primeFactors
+                .GroupBy(a => a)
+                .Select(a => new {Count = a.Count() })
+                .Aggregate(1, (x, y) => x * (y.Count + 1));
+            return numberOfFactors;
         }
     }
 }
