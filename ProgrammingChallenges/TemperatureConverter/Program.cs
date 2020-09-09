@@ -39,7 +39,7 @@ namespace TemperatureConverter
             } while (true);
 
             endTemperature = TemperatureConverter.Convert(startTemperature, destinationTemperature, temperature);
-            Console.WriteLine(endTemperature);
+            Console.WriteLine($"{endTemperature}{destinationTemperatureLetter}");
 
         }
     }
