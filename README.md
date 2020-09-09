@@ -8,6 +8,7 @@ Programming challenges in C#
 ## Table of content
 * [00 Name generator](#00)
 * [01 Higher/lower](#01)
+* [02 Temperature Converter](#02)
 * [07 Projet Euler](#07)
 
 ## Solutions
@@ -18,6 +19,10 @@ Programming challenges in C#
 * <a name ="01">01</a> [Higher/lower](ProgramingChallenges/HigherLower)<br>
 
 ![01](ProgrammingChallenges/Docs/HigherLower.png)
+
+* <a name="02">02</a> [Temperature Converter](ProgrammingChallenges/TemperatureConverter)<br>
+
+![02](ProgrammingChallenges/Docs/TemperatureConverter.png)
 
 * <a name="07">07</a> [Project Euler](ProgrammingChallenges/Project%20Euler)<br>
 
