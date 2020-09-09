@@ -20,7 +20,8 @@ namespace Project_Euler
                                      "9. Special Pythagorean triplet\n" +
                                      "10. Summation of primes\n" +
                                      "11. Largest product in a grid\n" +
-                                     "12. Highly divisible triangular number");
+                                     "12. Highly divisible triangular number\n" +
+                                     "13. Large sum");
 
             Console.WriteLine("Please, choose the number of Euler's Problem: ");
             try {
@@ -63,6 +64,9 @@ namespace Project_Euler
             }
             else if (number == 12) {
                 Euler12.Calculate();
+            }
+            else if (number == 13) {
+                Euler13.Calculate();
             }
             else
                 Console.WriteLine("This number isn't avaible");
