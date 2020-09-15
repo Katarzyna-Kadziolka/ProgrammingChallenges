@@ -17,6 +17,7 @@ namespace Project_Euler
                                      "5. Smallest multiple\n" +
                                      "6. Sum square difference\n" +
                                      "7. 10001st prime\n" +
+                                     "8. Largest product in series\n" +
                                      "9. Special Pythagorean triplet\n" +
                                      "10. Summation of primes\n" +
                                      "11. Largest product in a grid\n" +
@@ -52,6 +53,9 @@ namespace Project_Euler
             }
             else if (number == 7) {
                 Euler7.Calculate();
+            }
+            else if (number == 8) {
+                Euler8.Calculate();
             }
             else if (number == 9) {
                 Euler9.Calculate();
