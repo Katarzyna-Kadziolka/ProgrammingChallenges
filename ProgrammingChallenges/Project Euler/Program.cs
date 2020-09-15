@@ -9,7 +9,7 @@ namespace Project_Euler
         {
             List<int> availableNumbersList = new List<Int32>() {1, 2, 3, 4, 9, 10};
             int number;
-            System.Console.WriteLine("Avaible Euler's Problems:\n" +
+            System.Console.WriteLine("Available Euler's Problems:\n" +
                                      "1. Multiples of 3 and 5\n" +
                                      "2. Even Fibonacci numbers\n" +
                                      "3. Largest prime factor\n" +
