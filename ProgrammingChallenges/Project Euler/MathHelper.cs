@@ -88,5 +88,43 @@ namespace Project_Euler {
                 .Aggregate(1, (x, y) => x * (y.Count + 1));
             return numberOfFactors;
         }
+
+        public static List<long> CreateCollatzSequece(int startingNumber){
+            List<long> collatzSequence = new List<long> ();
+            CreateCollatz(collatzSequence, startingNumber);
+            return collatzSequence;
+            
+        }
+        private static void CreateCollatz (List<long> collatzSequence, long number) {
+            collatzSequence.Add(number);
+            if (number == 1) {
+                return;
+            }
+            if (number % 2 == 0) {
+                CreateCollatz (collatzSequence, number/2);
+            }
+            else {
+                CreateCollatz (collatzSequence, number * 3 + 1);
+            }
+
+        }
+        public static long CountCollatzChain (long startingNumber) {
+            long count = 1;
+            long[] cache = new long [1_000_000];
+            
+            while (startingNumber != 1) {
+                if (startingNumber % 2 == 0) {
+                    startingNumber = startingNumber/2;
+                    count++;
+                }
+                else {
+                    startingNumber = startingNumber * 3 + 1;
+                    count++;
+                }
+            }
+            cache[startingNumber] = count;
+            return count;
+        }
+        
     }
 }

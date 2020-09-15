@@ -17,7 +17,7 @@ namespace Project_Euler
             for (int i = 0; i < number.Length - numberOfNumberToMultiply; i++) {
                 long result = 1;
                 for (int j = 0; j < numberOfNumberToMultiply; j++) {
-                    result = result * Convert.ToInt32(number[j + i].ToString());
+                    result = result * Convert.ToInt64(number[j + i].ToString());
                 }
             
                 if (result > biggestResult) {
