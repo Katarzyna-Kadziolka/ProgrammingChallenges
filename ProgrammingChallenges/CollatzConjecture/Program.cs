@@ -19,7 +19,7 @@ namespace CollatzConjecture
                     }
                 } while (false);
                 
-            } while (startNumber == 0);
+            } while (startNumber <= 0);
             List<long> collatzSequence = CollatzGenerator.CreateCollatzSequece(startNumber);
             List<string> collatzSequenceString = new List<string>();
             for (int i = 0; i < collatzSequence.Count; i++) {
