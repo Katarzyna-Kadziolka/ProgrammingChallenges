@@ -10,6 +10,7 @@ Programming challenges in C#
 * [01 Higher/lower](#01)
 * [02 Temperature Converter](#02)
 * [07 Projet Euler](#07)
+* [15 Collatz Conjecture](#15)
 
 ## Solutions
 * <a name="00">00</a> [Name generator](ProgrammingChallenges/NameGenerator)<br>
@@ -27,3 +28,11 @@ Programming challenges in C#
 * <a name="07">07</a> [Project Euler](ProgrammingChallenges/Project%20Euler)<br>
 
 ![07](ProgrammingChallenges/Docs/Euler.png)
+
+* <a name="15">15</a> [Collatz Conjecture](ProgrammingChallenges/CollatzConjecture)<br>
+
+![15](ProgrammingChallenges/Docs/CollatzConjecture.png)
+
+
+
+
