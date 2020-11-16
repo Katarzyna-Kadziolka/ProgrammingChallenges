@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 
 namespace Project_Euler {
@@ -89,7 +90,14 @@ namespace Project_Euler {
             return numberOfFactors;
         }
 
-        
+        public static BigInteger CalculateStrong(int number) {
+            BigInteger result = 1;
+            for (int i = 1; i < number + 1; i++) {
+                result = result * i;
+            }
+
+            return result;
+        }
        
         
     }

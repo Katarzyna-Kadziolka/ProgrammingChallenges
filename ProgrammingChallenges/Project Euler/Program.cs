@@ -23,7 +23,8 @@ namespace Project_Euler
                                      "11. Largest product in a grid\n" +
                                      "12. Highly divisible triangular number\n" +
                                      "13. Large sum\n" +
-                                     "14. Longest Collatz sequence");
+                                     "14. Longest Collatz sequence\n" +
+                                     "15. Lattice paths");
 
             Console.WriteLine("Please, choose the number of Euler's Problem: ");
             try {
@@ -75,6 +76,9 @@ namespace Project_Euler
             }
             else if (number == 14){
                 Euler14.Calculate();
+            }
+            else if (number == 15) {
+                Euler15.Calculate();
             }
             else
                 Console.WriteLine("This number isn't avaible");

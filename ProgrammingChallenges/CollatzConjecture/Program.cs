@@ -18,7 +18,6 @@ namespace CollatzConjecture {
             } while (startNumber <= 0);
 
             List<long> collatzSequence = CollatzGenerator.CreateCollatzSequece(startNumber);
-            
             Console.WriteLine("Your Collatz Sequence: ");
             collatzSequence.ForEach(l => Console.Write(l + "; "));
         }
