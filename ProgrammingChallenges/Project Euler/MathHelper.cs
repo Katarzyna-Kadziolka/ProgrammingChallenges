@@ -90,7 +90,7 @@ namespace Project_Euler {
             return numberOfFactors;
         }
 
-        public static BigInteger CalculateStrong(int number) {
+        public static BigInteger CalculateFactorial (int number) {
             BigInteger result = 1;
             for (int i = 1; i < number + 1; i++) {
                 result = result * i;

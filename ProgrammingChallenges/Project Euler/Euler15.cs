@@ -13,7 +13,7 @@ namespace Project_Euler {
             int n = gridSize + gridSize;
             int k = gridSize;
 
-            BigInteger result = MathHelper.CalculateStrong(n) / (MathHelper.CalculateStrong(k) * MathHelper.CalculateStrong(n - k));
+            BigInteger result = MathHelper.CalculateFactorial(n) / (MathHelper.CalculateFactorial(k) * MathHelper.CalculateFactorial(n - k));
 
             Console.WriteLine(result);
 
