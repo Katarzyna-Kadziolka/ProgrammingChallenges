@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Threading.Channels;
 
 namespace HigherLower {
     class HigherLower {
-        static void Main(string[] args) {
+        static void Main() {
             Console.WriteLine("Hello!\n" +
                               "1. Easy (1 - 10)\n" +
                               "2. Medium (1 - 100)\n" +
@@ -16,13 +14,13 @@ namespace HigherLower {
                 Console.WriteLine("Please, choose an avaible difficult level");
                 difficultLevel = Convert.ToInt32(Console.ReadLine());
             } while (difficultLevel != 1 && difficultLevel != 2 && difficultLevel != 3 && difficultLevel != 4);
-            
+
             int attempt = 1;
             int number = GetRandomNumber(difficultLevel);
             Console.WriteLine("Game Start!\n" +
                               "Enter valid number:");
             int inputNumber;
-            do { 
+            do {
                 inputNumber = Convert.ToInt32((Console.ReadLine()));
                 if (inputNumber < number) {
                     Console.WriteLine("Higher");
@@ -33,7 +31,7 @@ namespace HigherLower {
                     attempt++;
                 }
             } while (inputNumber != number);
-            
+
             Console.WriteLine("You won!\n" +
                               $"Attempts: {attempt}");
         }
@@ -41,7 +39,7 @@ namespace HigherLower {
         static private int GetRandomNumber(int difficultLevel) {
             int number = 0;
             if (difficultLevel == 1) {
-                number = new Random().Next(1, 10); 
+                number = new Random().Next(1, 10);
             }
             else if (difficultLevel == 2) {
                 number = new Random().Next(1, 100);

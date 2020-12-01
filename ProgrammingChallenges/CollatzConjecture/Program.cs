@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace CollatzConjecture {
     class Program {
-        static void Main(string[] args) {
+        static void Main() {
             Console.WriteLine("Welcome in the Collatz Sequence Generator!");
             int startNumber = 0;
             do {
@@ -12,7 +11,7 @@ namespace CollatzConjecture {
                 try {
                     startNumber = Convert.ToInt32(Console.ReadLine());
                 }
-                catch (System.FormatException) {
+                catch (FormatException) {
                     Console.WriteLine("It's not a number!");
                 }
             } while (startNumber <= 0);

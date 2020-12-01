@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 
-namespace Project_Euler
-{
-    class Euler6
-    {
+namespace Project_Euler {
+    class Euler6 {
         public static void Calculate() {
             Stopwatch stopwatch = Stopwatch.StartNew();
 
@@ -25,6 +20,7 @@ namespace Project_Euler
             for (int i = 1; i < maxNumber + 1; i++) {
                 result = result + i;
             }
+
             result = result * result;
             return result;
         }
@@ -34,6 +30,7 @@ namespace Project_Euler
             for (int i = 1; i < maxNumber + 1; i++) {
                 result = result + i * i;
             }
+
             return result;
         }
     }

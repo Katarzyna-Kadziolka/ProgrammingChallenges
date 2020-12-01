@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace Project_Euler
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            List<int> availableNumbersList = new List<Int32>() {1, 2, 3, 4, 9, 10};
+namespace Project_Euler {
+    class Program {
+        static void Main() {
             int number;
-            System.Console.WriteLine("Available Euler's Problems:\n" +
+            Console.WriteLine("Available Euler's Problems:\n" +
                                      "1. Multiples of 3 and 5\n" +
                                      "2. Even Fibonacci numbers\n" +
                                      "3. Largest prime factor\n" +
@@ -24,7 +19,8 @@ namespace Project_Euler
                                      "12. Highly divisible triangular number\n" +
                                      "13. Large sum\n" +
                                      "14. Longest Collatz sequence\n" +
-                                     "15. Lattice paths");
+                                     "15. Lattice paths\n" +
+                                     "16. Power digit sum");
 
             Console.WriteLine("Please, choose the number of Euler's Problem: ");
             try {
@@ -74,15 +70,17 @@ namespace Project_Euler
             else if (number == 13) {
                 Euler13.Calculate();
             }
-            else if (number == 14){
+            else if (number == 14) {
                 Euler14.Calculate();
             }
             else if (number == 15) {
                 Euler15.Calculate();
             }
+            else if (number == 16) {
+                Euler16.Calculate();
+            }
             else
                 Console.WriteLine("This number isn't avaible");
-                
         }
     }
 }

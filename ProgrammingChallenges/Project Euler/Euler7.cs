@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 
-namespace Project_Euler
-{
+namespace Project_Euler {
     class Euler7 {
         public static void Calculate() {
             Stopwatch stopwatch = Stopwatch.StartNew();
@@ -14,10 +11,9 @@ namespace Project_Euler
             int number = 0;
             do {
                 number++;
-                if (MathHelper.IsPrime(number) == true) {
+                if (MathHelper.IsPrime(number)) {
                     currentPrimeNumber++;
-                } 
-
+                }
             } while (currentPrimeNumber < expectedPrimeNumber);
 
             Console.WriteLine(number);

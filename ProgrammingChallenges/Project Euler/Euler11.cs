@@ -3,13 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Channels;
 
-namespace Project_Euler
-{
-    class Euler11
-    {
+namespace Project_Euler {
+    class Euler11 {
         public static void Calculate() {
             Stopwatch stopwatch = Stopwatch.StartNew();
 
@@ -26,7 +22,8 @@ namespace Project_Euler
             int verticalProduct = GetVerticalProduct(array);
             int diagonallyRightProduct = GetDiagonallyRightProduct(array);
             int diagonallyLeftProduct = GetDiagonallyLeftProduct(array);
-            List<int> productsList = new List<int>() {horizontalProduct, verticalProduct, diagonallyRightProduct, diagonallyLeftProduct};
+            List<int> productsList = new List<int>()
+                { horizontalProduct, verticalProduct, diagonallyRightProduct, diagonallyLeftProduct };
 
             Console.WriteLine(productsList.Max());
 
@@ -46,6 +43,7 @@ namespace Project_Euler
                     }
                 }
             }
+
             return maxProduct;
         }
 
@@ -61,6 +59,7 @@ namespace Project_Euler
                     }
                 }
             }
+
             return maxProduct;
         }
 
@@ -76,6 +75,7 @@ namespace Project_Euler
                     }
                 }
             }
+
             return maxProduct;
         }
 
@@ -91,6 +91,7 @@ namespace Project_Euler
                     }
                 }
             }
+
             return maxProduct;
         }
     }

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Numerics;
-using System.Text;
 
-namespace Project_Euler
-{
+namespace Project_Euler {
     class Euler13 {
         public static void Calculate() {
             Stopwatch stopwatch = Stopwatch.StartNew();
@@ -16,7 +12,7 @@ namespace Project_Euler
             for (int i = 0; i < lines.Length; i++) {
                 numbersSum = numbersSum + (BigInteger.Parse(lines[i]));
             }
-            
+
             string s = numbersSum.ToString()[0..10];
             Console.WriteLine(s);
             stopwatch.Stop();

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TemperatureConverter {
     public class TemperatureConverter {
@@ -46,7 +44,7 @@ namespace TemperatureConverter {
                 case Temperature.Kelvin:
                     return temperature;
                 case Temperature.Fahrenheit:
-                    return (temperature + 459.67f) * (5f/9f);
+                    return(temperature + 459.67f) * (5f / 9f);
                 default:
                     throw new ArgumentOutOfRangeException(nameof(from), from, null);
             }
@@ -57,7 +55,7 @@ namespace TemperatureConverter {
                 case Temperature.Celsius:
                     return 32 + 1.8f * temperature;
                 case Temperature.Kelvin:
-                    return (temperature * 1.8f) - 459.67f;
+                    return(temperature * 1.8f) - 459.67f;
                 case Temperature.Fahrenheit:
                     return temperature;
                 default:

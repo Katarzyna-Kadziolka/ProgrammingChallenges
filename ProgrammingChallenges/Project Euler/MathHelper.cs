@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using System.Runtime.CompilerServices;
 
 namespace Project_Euler {
     class MathHelper {
@@ -52,14 +51,16 @@ namespace Project_Euler {
                     }
                 }
             }
+
             return primeFactors;
         }
 
-        public  static int GetProduct(List<int> factors ) {
+        public static int GetProduct(List<int> factors) {
             int result = 1;
             for (int i = 0; i < factors.Count; i++) {
                 result = result * factors[i];
             }
+
             return result;
         }
 
@@ -85,12 +86,12 @@ namespace Project_Euler {
 
             int numberOfFactors = primeFactors
                 .GroupBy(a => a)
-                .Select(a => new {Count = a.Count() })
+                .Select(a => new { Count = a.Count() })
                 .Aggregate(1, (x, y) => x * (y.Count + 1));
             return numberOfFactors;
         }
 
-        public static BigInteger CalculateFactorial (int number) {
+        public static BigInteger CalculateFactorial(int number) {
             BigInteger result = 1;
             for (int i = 1; i < number + 1; i++) {
                 result = result * i;
@@ -98,7 +99,5 @@ namespace Project_Euler {
 
             return result;
         }
-       
-        
     }
 }

@@ -16,9 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project Euler", "Project Eu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureConverter", "TemperatureConverter\TemperatureConverter.csproj", "{9E7A4D09-6577-4944-A9FA-EE9CD1323EF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level14", "Level14\Level14.csproj", "{EFF31434-C635-4BC0-9D41-B7A7F6F3768F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollatzConjecture", "CollatzConjecture\CollatzConjecture.csproj", "{00AA2634-A2F3-43E1-8CFB-A61276819717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollatzConjecture", "CollatzConjecture\CollatzConjecture.csproj", "{00AA2634-A2F3-43E1-8CFB-A61276819717}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +44,6 @@ Global
 		{9E7A4D09-6577-4944-A9FA-EE9CD1323EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E7A4D09-6577-4944-A9FA-EE9CD1323EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E7A4D09-6577-4944-A9FA-EE9CD1323EF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFF31434-C635-4BC0-9D41-B7A7F6F3768F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFF31434-C635-4BC0-9D41-B7A7F6F3768F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFF31434-C635-4BC0-9D41-B7A7F6F3768F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFF31434-C635-4BC0-9D41-B7A7F6F3768F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00AA2634-A2F3-43E1-8CFB-A61276819717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{00AA2634-A2F3-43E1-8CFB-A61276819717}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00AA2634-A2F3-43E1-8CFB-A61276819717}.Release|Any CPU.ActiveCfg = Release|Any CPU

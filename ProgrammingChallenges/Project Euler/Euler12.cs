@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 
-namespace Project_Euler
-{
-    class Euler12
-    {
+namespace Project_Euler {
+    class Euler12 {
         public static void Calculate() {
             Stopwatch stopwatch = Stopwatch.StartNew();
-            
+
             int minNumberOfFactors = 500;
             int startNumber = 2;
             int triangularNumber = 1;
@@ -18,14 +14,11 @@ namespace Project_Euler
                 triangularNumber = MathHelper.CreateTriangularNumber(startNumber, triangularNumber);
                 numberOfFactors = MathHelper.GetNumberOfFactors(triangularNumber);
                 startNumber++;
-
             } while (numberOfFactors < minNumberOfFactors);
 
             Console.WriteLine(triangularNumber);
             stopwatch.Stop();
             Console.WriteLine(stopwatch.Elapsed);
         }
-
-
     }
 }

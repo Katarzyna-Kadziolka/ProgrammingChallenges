@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Text;
-using Helpers;
 
 namespace NameGenerator {
     class Program {
-        static void Main(string[] args) {
-            int wordLength;
+        static void Main() {
             Console.Write("Enter length of word: ");
-            
 
             while (true) {
+                int wordLength;
                 try {
                     wordLength = Convert.ToInt32(Console.ReadLine());
                 }
@@ -17,12 +14,11 @@ namespace NameGenerator {
                     Console.WriteLine("It wasn't a number");
                     return;
                 }
+
                 string name = Generator.GenerateName(wordLength);
                 Console.WriteLine(name);
                 Console.Write("Enter length of word: ");
             }
         }
     }
-
-    
 }

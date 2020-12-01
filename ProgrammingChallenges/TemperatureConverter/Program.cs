@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Linq;
 
-namespace TemperatureConverter
-{
+namespace TemperatureConverter {
     class Program {
-        static void Main(string[] args) {
-
+        static void Main() {
             Console.WriteLine("Welcome in Temperature Converter!\n" +
                               "C = Celsius\n" +
                               "K = Kelvin\n" +
                               "F = Fahrenheit");
             string startTemperatureLetter;
             string destinationTemperatureLetter;
-            string[] supportedTemperatures = new string[]{"C", "K", "F"};
+            string[] supportedTemperatures = new string[] { "C", "K", "F" };
             float endTemperature;
             float temperature;
 
@@ -35,12 +33,11 @@ namespace TemperatureConverter
                 Console.WriteLine("Please, write a value of temperature: ");
                 if (float.TryParse(Console.ReadLine(), out temperature)) {
                     break;
-                };
+                }
             } while (true);
 
             endTemperature = TemperatureConverter.Convert(startTemperature, destinationTemperature, temperature);
             Console.WriteLine($"{endTemperature}{destinationTemperatureLetter}");
-
         }
     }
 }
